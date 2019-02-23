@@ -4,6 +4,7 @@ def dative(word="t\u00FCk\u00F6r")
   all_vowels = (front_vowels<< back_vowels).flatten
 
   array = word.split
+  binding.pry
   array.each do |letter|
     if !all_vowels.include?(letter)
       array.delete(letter)
@@ -13,7 +14,6 @@ def dative(word="t\u00FCk\u00F6r")
       else
         dative = "#{word}nak"
         return dative
-        binding.pry
       end
     end
   end
