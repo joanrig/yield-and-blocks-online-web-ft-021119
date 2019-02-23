@@ -21,7 +21,8 @@
 #   end
 # end
 
-def dative(word="t\u00FCk\u00F6r")
+word = "t\u00FCk\u00F6r"
+def dative(word)
   front_vowels = "e, é, i, í, ö, ő, ü, ű".split(" ")
   back_vowels = "a, á, o, ó, u, ú".split(" ")
   all_vowels = (front_vowels<< back_vowels).flatten
